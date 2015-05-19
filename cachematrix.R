@@ -28,8 +28,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 # The cacheSolve function either takes in a matrix or a makeCacheMatrix object.  For matrices,
-# it solves the inverse.  For makeCacheMatrix objects, it checks if the inverse is already uploaded.
-# If it is it outputs the inverse, otherwise it calculates it and uploads it to makeCacheMatrix object.
+# it solves and outputs the inverse.  For makeCacheMatrix objects, it checks if the inverse is 
+# already uploaded to the object. If it is it outputs the inverse from the object, otherwise it 
+# calculates the inverse, uploads it to makeCacheMatrix object and then outputs it.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
